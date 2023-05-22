@@ -38,6 +38,7 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.tboxResult = new System.Windows.Forms.TextBox();
             this.tboxErrorMsg = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numCount)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,12 +109,13 @@
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "담기";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // tboxResult
             // 
-            this.tboxResult.Location = new System.Drawing.Point(12, 214);
+            this.tboxResult.Location = new System.Drawing.Point(69, 214);
             this.tboxResult.Name = "tboxResult";
-            this.tboxResult.Size = new System.Drawing.Size(210, 21);
+            this.tboxResult.Size = new System.Drawing.Size(153, 21);
             this.tboxResult.TabIndex = 8;
             // 
             // tboxErrorMsg
@@ -124,11 +126,21 @@
             this.tboxErrorMsg.Size = new System.Drawing.Size(339, 21);
             this.tboxErrorMsg.TabIndex = 9;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 217);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 12);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "합계금액";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(368, 281);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.tboxErrorMsg);
             this.Controls.Add(this.tboxResult);
             this.Controls.Add(this.btnAdd);
@@ -141,6 +153,7 @@
             this.Controls.Add(this.lboxItem);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numCount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -159,6 +172,7 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox tboxResult;
         private System.Windows.Forms.TextBox tboxErrorMsg;
+        private System.Windows.Forms.Label label4;
     }
 }
 
